@@ -7,8 +7,6 @@ O projeto nowi-songs é um uma aplicação web desenvolvida em Python e JavaScri
 - Faça o download desse repositório;
 - Instale e ative sua virtualenv: `python -m venv venv`  `venv/scripts/activate` ou `venv/bin/activate`;
 - Instale as dependências: `pip install -r requirements.txt`;
-- Configure as variaveis de ambiente necessárias no caminho: `src/conf/.env`
-- Configure o arquivo settings.py referenciando as variaveis de ambiente;
 - Por fim, aproveite: `flask run`;
 
 ## 🚀 Tecnologias
