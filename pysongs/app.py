@@ -1,6 +1,6 @@
 import json
-from flask import Flask, render_template, redirect, request, jsonify
-from pysongs.services import api, ultils
+from flask import Flask, render_template
+from pysongs.services import api
 
 app = Flask(__name__)
 
