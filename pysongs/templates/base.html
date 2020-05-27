@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nowi | Songs</title>
+  <link rel="shortcut icon" href="/static/img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  <!-- Icons Material design -->
+  <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <!-- Icons fontawesome -->
+  <script src="https://kit.fontawesome.com/83416f206d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class="links">
+      <a href="/"><img src="/static/img/logo.png" alt="logo"> <span>Spotipy</span></a>
+      <a href="/"><i class="fas fa-home"></i> Home</a>
+      <a href="/musics"><i class="fas fa-music"></i> Músicas</a>
+      <a href="/artists"><i class="fas fa-microphone-alt"></i> Artistas</a>
+      <a href="/albums"><i class="fas fa-compact-disc"></i> Álbuns</a>
+    </div>
+  </header>
+  
+  <main>
+
+    {% block content %}
+
+    {% endblock %}
+
+  </main>
+
+  <footer>
+    <div class="info">
+      <p>Desenvolvido com <i class="fas fa-heart"></i> por <a href="https://www.nowi.com.br"><b>Nowi</b></a></p>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  
+    {% block scripts %}
+
+  {% endblock %}
+</body>
+
+</html>
